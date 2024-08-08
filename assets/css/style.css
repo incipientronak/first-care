@@ -323,6 +323,7 @@ body {
 /********** Contact Us Start **********/
 
 .contact-form {
+    box-sizing: border-box;
     background-color: var(--white);
     border-radius: 20px;
     box-shadow: 0px 8px 32px rgba(25, 97, 251, 0.16);
@@ -331,6 +332,9 @@ body {
     height: 820px;
     margin-left: auto;
     margin-right: auto;
+    padding: 48px;
+    position: relative;
+    margin-bottom: 48px;
 }
 
 .contact-form h1 {
@@ -341,25 +345,44 @@ body {
     margin-bottom: 24px;
 }
 
-.form-padding {
-    padding: 48px;
+.field {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
 }
 
 .input {
+    box-sizing: border-box;
     height: 48px;
     border: 1px solid #E0E7F2;
     border-radius: 7px;
     width: 100%;
+    padding: 16px;
     margin-top: 8px;
 }
 
-.field {
-    flex-wrap: wrap;
-}
 .input-field {
-    margin-bottom: 24px;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: start;
-    
+    margin-top: 24px;
+}
+
+.textarea-field {
+    font-family: work sans;
+    height: auto !important;
+    max-width: 100%;
+}
+
+.contact-form button {
+    background-color: var(--secondary);
+    color: var(--white);
+    border: 1px solid var(--secondary);
+    position: absolute;
+    bottom: 48px;
+}
+
+.specialty-dropdown {
+    background-image: url(../images/join-our-network/arrow.png);
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }

@@ -7,6 +7,9 @@
         href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
@@ -19,12 +22,18 @@
             <a href="./index.html"> <img src="./assets/Images/logo.png"> </a>
         </div>
 
-        <div class="top-menu-links weight-semibold">
-            <a href="./what-we-do.html"> What we do </a>
-            <a href="./what-we-treat.html"> What we treat </a>
-            <a href="./about-us.html"> About Us </a>
-            <a href="./contact.html"> Contact </a>
-        </div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <img src="./assets/images/menu.png" alt="">
+            </label>
+            <ul class="menu-list weight-semibold">
+                <li><a class="active" href="./what-we-do.html">What we do</a></li>
+                <li><a href="./what-we-treat.html">What we treat</a></li>
+                <li><a href="./about-us.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
         <div class="social-links flex">
             <a href="./" target="_blank"> <img src="./assets/Images/linkedin.svg"> </a>
@@ -70,10 +79,10 @@
         </div>
 
         <div class="sub-content flex">
-            <div>
+            <div id="Image">
                 <img src="./assets/images/section-2/img-1.png" alt="">
             </div>
-            <div>
+            <div id="Content">
                 <h2 class="h2 weight-semibold">Provide virtual & in-person medical appointments</h2>
                 <p class="paragraph">Imagine waking up with a pounding headache or feeling intense pain. Instead of
                     enduring a long
@@ -85,7 +94,7 @@
         </div>
 
         <div class="sub-content flex">
-            <div>
+            <div id="Content">
                 <h2 class="h2 weight-semibold">Providing healthcare for Seniors</h2>
                 <p class="paragraph">If you're worried about the well-being of your elderly family members, we provide
                     peace of mind
@@ -93,16 +102,16 @@
                     offers comprehensive 360-degree health checks tailored specifically for the seniors, ensuring
                     their health and safety are prioritized at all times.</p>
             </div>
-            <div>
+            <div id="Image">
                 <img src="./assets/images/section-2/img-2.png" alt="">
             </div>
         </div>
 
         <div class="sub-content flex">
-            <div>
+            <div id="Image">
                 <img src="./assets/images/section-2/img-3.png" alt="">
             </div>
-            <div>
+            <div id="Content">
                 <h2 class="h2 weight-semibold">Nutrition and wellness care</h2>
                 <p class="paragraph">Experience comprehensive health and well-being solutions tailored for you and your
                     loved ones.
